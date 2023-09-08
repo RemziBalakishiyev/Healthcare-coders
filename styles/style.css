@@ -64,6 +64,43 @@
     border: none;
 }
 
+
+.card{
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    padding: 10px 38px;
+    background-color: var(--light);
+    /* background-color: #1b73ee; */
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    height: 400px;
+}
+
+.card .card-body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.card .card-body .card-title{
+    color: var(--dark);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.card .card-body .card-text{
+    color: var(--grey);
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 10px;
+    width: 266px;
+}
+
+
 /* ========NAVBARS======== */
 
 .navbar{
@@ -143,4 +180,67 @@
 
 .main-home img{
     width: 50%;
-} 
+}
+
+
+/* ========= SERVICES ======== */
+
+.services{
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.services .services-head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+.services .services-head h2{
+    width: 212px;
+    height: 56px;
+    color: var(--dark);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.services .services-head p{
+    width: 952px;
+    height: 60px;
+    margin-top: 30px;
+    color: var(--grey);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.services .services-body{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services .services-body .card{
+    width: 30%;
+    margin:10px ;
+}
+
+@media screen and (max-width:900px) {
+    .services .services-body .card{
+        width: 45%;
+ 
+    }
+}
