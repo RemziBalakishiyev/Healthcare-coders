@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --primary:#458FF6;
+    --light-primary:#1b73ee;
+    --light:#fff;
+    --dark:#000;
+    --grey:#7D7987;
+    --secondary-dark:#233348;
+    --thirth-dark:#1F1534;
+    --light-grey:rgba(255, 255, 255, 0.85);
+}
+/* ===========SPECIAL ELEMENTS============= */
+
+.flex-row-container{
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+
+    flex-direction: row;
+}
+
+.btn{
+    width: 200px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all .2s ease-out;
+}
+
+
+.btn-filled{
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.btn-filled:hover{
+    background-color: var(--light-primary);
+}
+
+.btn-outline{
+    background-color: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+
+.btn-outline:hover{
+    background-color: var(--primary);
+    color: var(--light);
+    border: none;
+}
+
+/* ========NAVBARS======== */
+
+.navbar{
+    width: 100%;
+    display: flex;
+    padding: 36px;
+}
+
+
+.nav-container{
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.list-item li{
+    margin-left: 40px;
+}
+
+.list-item li a{
+    color: var(--thirth-dark);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+}
+
+.navbar .nav-container  .list-item li a:hover{
+    opacity: 1;
+}
+
+.navbar .nav-container  .list-item li .active{
+    color: var(--thirth-dark);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;   
+    line-height: normal;
+    opacity: 1;
+}
+
+.main-home .main{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start ;
+    flex-direction: column;
+}
+
+.main-home .main h2{
+    width: 427px;
+    height: 112px;
+    color: var(--dark);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.main-home .main p{
+    width: 445px;
+    height: 96px;
+    color: var(--grey);
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    margin: 12px 0;
+
+}
+
+.main-home img{
+    width: 50%;
+} 
